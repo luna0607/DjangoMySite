@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.db import models
-
+from django.contrib import admin
 
 
 # Create your models here.
@@ -11,3 +10,5 @@ class BlogPost(models.Model):
     body = models.TextField()
     timestamp = models.DateTimeField()
 
+
+admin.site.register(BlogPost)
